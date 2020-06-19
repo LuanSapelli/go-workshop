@@ -7,4 +7,6 @@ func AutoMigration() {
 
 	db.AutoMigrate(user{})
 	db.AutoMigrate(debt{})
+
+	db.Model(&debt{}).AddForeignKey("user_id", "users(id)", "RESTRICT", "RESTRICT")
 }

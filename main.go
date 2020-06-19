@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	"go-workshop/src"
 
@@ -39,5 +40,5 @@ func main() {
 		})
 	})
 
-	engine.Run(fmt.Sprintf(":8088"))
+	engine.Run(fmt.Sprintf(":%v", os.Getenv("PORT")))
 }

@@ -2,6 +2,7 @@ package src
 
 import (
 	"fmt"
+	"os"
 	"reflect"
 
 	"github.com/gin-gonic/gin"
@@ -13,14 +14,12 @@ const (
 	dbName = "go_workshop"
 	dbUser = "admin"
 	dbPort = "5432"
-	dbHost = "127.0.0.1"
-	dbPass = "admin"
 )
 
-//var (
-//	dbHost string = os.Getenv("DB_HOST")
-//	dbPass string = os.Getenv("DB_PASSWD")
-//)
+var (
+	dbHost string = os.Getenv("DB_HOST")
+	dbPass string = os.Getenv("DB_PASSWD")
+)
 
 func dbConnect() *gorm.DB {
 
