@@ -1,25 +1,13 @@
-# go-workshop
-Workshop Golang
+# Golang CRUD 🚀
 
-# Framework & Libs
+<p>
+Study project written in GO, simple CRUD using Postgres and GORM
+</p>
 
-Gin-gonic, Gorm, Postgres
+### Tools
 
-# Links/Observações
+Gin-gonic
+Gorm
+Postgres
 
-É necessario ter instalado:
 
-Golang: https://golang.org/dl/
-
-VSCode: https://code.visualstudio.com/
- 
-Docker: https://www.docker.com/
-
-Docker-Compose: https://docs.docker.com/compose/
-
-Extensões VSCode:
-
-- Go
-- Go Critic
-- Go Doc
-- Go Outliner
